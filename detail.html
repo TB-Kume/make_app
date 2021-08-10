@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品詳細</title>
+    <!-- FontAwasome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
+
+  </head>
+
+  <body>
+    <header id="header" class="site_header">
+      <h1 class="site_logo">
+        <a href="#">ARSフードロス</a>
+      </h1>
+      <ul class="header_contain">
+        <nav class="item">
+          <li>
+            <button class="item_trigger" id="sub_btn">
+              <span>商品一覧</span><i class="fas fa-chevron-down"></i>
+            </button>
+          </li>
+          <ul id="sub_menu">
+            <li><a href="#"><span>全て見る</span>
+              </a></li>
+            <li><a href="#"><span>食品</span>
+              </a></li>
+            <li><a href="#"><span>飲料</span>
+              </a></li>
+            <li><a href="#"><span>日用品</span>
+              </a></li>
+            <li><a href="#"><span>美容・健康</span>
+              </a></li>
+            <li><a href="#"><span>雑貨</span>
+              </a></li>
+            <li><a href="#"><span>その他</span>
+              </a></li>
+          </ul>
+        </nav>
+        <nav class="member">
+          <button class="member_trigger" id="sub_btn2">
+            <span>会員限定<br>メニュー</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="sub_menu2">
+            <li><a href="#"><span>ログイン</span>
+              </a></li>
+            <li><a href="#"><span>新規登録</span>
+              </a></li>
+          </ul>
+        </nav>
+        <aside class="search">
+          <form>
+            <input type="search" autocomplete="off" value name="name" placeholder="商品を検索">
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </aside>
+      </ul>
+    </header>
+    <!-- メイン -->
+    <main id="main">
+      <!-- ここにパンクズ入れたい -->
+      <div class="spencer"></div>
+      <section id="productDetail">
+        <!-- 左側 -->
+        <div class="item_detail">
+          <div class="img_detail">
+            <img src="img/4e0fd9f33800f722978f8096222d102a_t.jpeg">
+          </div>
+          <address class="address">当商品の販売・広告は<span>株式会社・・・</span>が行っております。</address>
+          <div class="detail_title">
+            <h2>商品説明</h2>
+          </div>
+          <div class="detail_text">
+            <p>サンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプル
+              <br>テキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキスト
+            </p>
+            <div class="detail_table">
+              <table>
+                <tbody>
+                  <tr>
+                    <th>内容量</th>
+                    <td>10個×10セット</td>
+                  </tr>
+                  <tr>
+                    <th>メーカー</th>
+                    <td>コカ・コーラ</td>
+                  </tr>
+                  <tr>
+                    <th>賞味期限</th>
+                    <td>2020年 1月 1日</td>
+                  </tr>
+                  <tr>
+                    <th>原材料</th>
+                    <td>桃</td>
+                  </tr>
+                  <tr>
+                    <th>注意事項</th>
+                    <td>早めにお召し上がりください。</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>本商品の送料は無料です。合計金額による送料無料の計算対象外になります。</p>
+          </div>
+        </div>
+        <!-- 右側 -->
+        <div id="itemInfo" class="item_info">
+          <div class="item_detail_info">
+            <h1 class="item_title">[ご当地限定]北海道産　桃　10個×10セット</h1>
+            <div class="item_price_area">
+              <dl class="item_price">
+                <dt><i class="fas fa-yen-sign fa_yen"></i></dt>
+                <dd>
+                  <p><small>価格</small><span class="price"><strong>2,500</strong>円（税込）</span></p>
+                </dd>
+              </dl>
+            </div>
+            <div class="unit_price">
+              <span class="reference">（参考価格<strong>20,000</strong>円）</span>
+            </div>
+          </div>
+          <p class="caution">※ご購入後のキャンセルは原則受け付けておりません。<br>（キャンセル及び返品・交換については
+            <a href="#">コチラ）</a>
+          </p>
+          <!-- カート -->
+          <form>
+            <div class="cart_area">
+              <div class="cart_inner">
+                <!-- <p class="stock"><span>在庫あり</span></p> -->
+                <div class="cart_btn cart_btn_plus" id="up">＋</div>
+                <div class="cart_number_input">
+                  <input id="textbox" type="text" name="amount" value="1" size="2" maxlength="2">
+                </div>
+                <div class="cart_btn cart_btn_minus" id="down">ー</div>
+              </div>
+            </div>
+            <button type="submit" class="add_cart btn">
+              <i class="fas fa-shopping-cart btn2"></i>
+              <span>購入する</span>
+              <i class="fas fa-caret-right btn2"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer id="footer">
+      <ul class="inner wrapper">
+        <li>
+          <p class="title">ご利用方法</p>
+          <ul class="menu">
+            <li>
+              <a href="#">ARSフードロスとは？</a>
+            </li>
+            <li>
+              <a href="#">ご利用ガイド</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">出品者</p>
+          <ul class="menu">
+            <li>
+              <a href="#">出品について</a>
+            </li>
+            <li>
+              <a href="#">出品ガイド</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">購入者</p>
+          <ul class="menu">
+            <li>
+              <a href="#">商品一覧</a>
+            </li>
+            <li>
+              <a href="#">ログイン・新規登録</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">会社概要</p>
+          <ul class="menu">
+            <li>
+              <a href="#">特定商取引法に関する表示</a>
+            </li>
+            <li>
+              <a href="#">プライバシーポリシー</a>
+            </li>
+            <li>
+              <a href="#">よくある質問</a>
+            </li>
+            <li>
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li>
+              <a href="#">返品交換について</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">公式SNS</p>
+          <ul class="menu">
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i>facebook</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p class="copyright">@ 2021 ARSフードロス</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+
+</html>

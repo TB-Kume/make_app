@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登録</title>
+    <!-- FontAwasome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add.css">
+
+  </head>
+
+  <body id="top_page">
+    <header id="header" class="site_header">
+      <h1 class="site_logo">
+        <a href="#">ARSフードロス</a>
+      </h1>
+      <ul class="header_contain">
+        <nav class="item">
+          <li>
+            <button class="item_trigger" id="sub_btn">
+              <span>商品一覧</span><i class="fas fa-chevron-down"></i>
+            </button>
+          </li>
+          <ul id="sub_menu">
+            <li><a href="#"><span>全て見る</span>
+              </a></li>
+            <li><a href="#"><span>食品</span>
+              </a></li>
+            <li><a href="#"><span>飲料</span>
+              </a></li>
+            <li><a href="#"><span>日用品</span>
+              </a></li>
+            <li><a href="#"><span>美容・健康</span>
+              </a></li>
+            <li><a href="#"><span>雑貨</span>
+              </a></li>
+            <li><a href="#"><span>その他</span>
+              </a></li>
+          </ul>
+        </nav>
+        <nav class="member">
+          <button class="member_trigger" id="sub_btn2">
+            <span>会員限定<br>メニュー</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="sub_menu2">
+            <li><a href="#"><span>ログイン</span>
+              </a></li>
+            <li><a href="#"><span>新規登録</span>
+              </a></li>
+          </ul>
+        </nav>
+        <aside class="search">
+          <form>
+            <input type="search" autocomplete="off" value name="name" placeholder="商品を検索">
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </aside>
+      </ul>
+    </header>
+
+    <!-- 登録セクション -->
+    <main class="add_main">
+      <div class="add_header">
+        <h1 class="add_title">商品登録</h1>
+      </div>
+      <form class="add_form">
+        <section class="add_wrapper">
+          <h2 class="add_info">基本情報</h2>
+          <dl>
+            <dt class="add_item_title">
+              <label>商品名</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <input class="item_input" type="text" placeholder="商品名" name="item_name">
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>商品画像</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <img id="preview">
+              <div class="empty_box">
+                <div data-type="empty" class="image_empty_box">
+                  <div class="upload_box">
+                    <input id="myImage" type="file" accept="image/*" multiple="multiple" class="upload_box_input">
+                    <i class="far fa-image fa_image_input"></i>
+                    <p class="image_caption">
+                      <span>画像を追加する</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <ul data-type="attention" class="image_attention_box">
+                <li data-type="attention-list" data-align="left" class="box_text">
+                  ※
+                  <span class="box_text_body">
+                    推奨サイズは1280px × 1280pxです</span>
+                </li>
+                <li data-type="attention-list" data-align="left" class="box_text">
+                  ※
+                  <span class="box_text_body">
+                    10MB以内の画像ファイルを用意してください</span>
+                </li>
+                <li data-type="attention-list" data-align="left" class="box_text">
+                  ※
+                  <span class="box_text_body">
+                    対応ファイル：jpg,png,gif</span>
+                </li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>商品説明</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <textarea name="itemDetail" placeholder="サイズ・カラー・素材などのくわしい情報や、この商品の背景や魅力を分かりやすい言葉で伝えましょう。"
+                id="itemDetail_detail" class="textarea_input"></textarea>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>内容量</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <input class="item_input" type="text" placeholder="内容量" name="item_name">
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>メーカー</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <input class="item_input" type="text" placeholder="メーカー" name="item_name">
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>賞味期限</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <input class="item_input" type="date" placeholder="賞味期限" name="item_name">
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>原材料</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <input class="item_input" type="text" placeholder="原材料" name="item_name">
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>注意事項</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <textarea name="itemDetail" placeholder="注意事項"
+                id="itemDetail_detail" class="textarea_input"></textarea>
+            </dd>
+          </dl>
+          <dl>
+
+        </section>
+        <section class="add_wrapper" style="margin-top: 30px;">
+          <h2 class="add_info">価格</h2>
+          <dl>
+            <dt class="add_item_title">
+              <label>参考価格（税込）</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <input class="item_input" type="text" placeholder="価格" name="item_name">
+            </dd>
+          </dl>
+          <dl>
+            <dt class="add_item_title">
+              <label>値引価格（税込）</label>
+              <span class="require">必須</span>
+            </dt>
+            <dd>
+              <input class="item_input" type="text" placeholder="値引価格" name="item_name">
+            </dd>
+          </dl>
+        </section>
+        <div class="btn_area">
+          <button type="button" class="cancel_btn_area common_btn">
+            <div class="cancel_btn">キャンセル</div>
+          </button>
+          <button type="button" class="submit_btn_area common_btn">
+            <div class="submit_btn">登録する</div>
+          </button>
+        </div>
+      </form>
+
+    </main>
+
+    <!-- footer -->
+    <footer id="footer" class="add_footer">
+      <p class="copyright">@ 2021 ARSフードロス</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+
+</html>
