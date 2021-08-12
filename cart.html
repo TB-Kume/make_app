@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,62 +13,137 @@
     <link rel="stylesheet" href="css/cart.css">
   </head>
 
-<body>
-  <header id="header" class="site_header">
-    <h1 class="site_logo">
-      <a href="#">ARSフードロス</a>
-    </h1>
-    <ul class="header_contain">
-      <nav class="item">
-        <li>
-          <button class="item_trigger" id="sub_btn">
-            <span>商品一覧</span><i class="fas fa-chevron-down"></i>
+  <body>
+    <header id="header" class="site_header">
+      <h1 class="site_logo">
+        <a href="#">ARSフードロス</a>
+      </h1>
+      <ul class="header_contain">
+        <nav class="item">
+          <li>
+            <button class="item_trigger" id="sub_btn">
+              <span>商品一覧</span><i class="fas fa-chevron-down"></i>
+            </button>
+          </li>
+          <ul id="sub_menu">
+            <li><a href="#"><span>全て見る</span>
+              </a></li>
+            <li><a href="#"><span>食品</span>
+              </a></li>
+            <li><a href="#"><span>飲料</span>
+              </a></li>
+            <li><a href="#"><span>日用品</span>
+              </a></li>
+            <li><a href="#"><span>美容・健康</span>
+              </a></li>
+            <li><a href="#"><span>雑貨</span>
+              </a></li>
+            <li><a href="#"><span>その他</span>
+              </a></li>
+          </ul>
+        </nav>
+        <nav class="member">
+          <button class="member_trigger" id="sub_btn2">
+            <span>会員限定<br>メニュー</span><i class="fas fa-chevron-down"></i>
           </button>
-        </li>
-        <ul id="sub_menu">
-          <li><a href="#"><span>全て見る</span>
-            </a></li>
-          <li><a href="#"><span>食品</span>
-            </a></li>
-          <li><a href="#"><span>飲料</span>
-            </a></li>
-          <li><a href="#"><span>日用品</span>
-            </a></li>
-          <li><a href="#"><span>美容・健康</span>
-            </a></li>
-          <li><a href="#"><span>雑貨</span>
-            </a></li>
-          <li><a href="#"><span>その他</span>
-            </a></li>
-        </ul>
-      </nav>
-      <nav class="member">
-        <button class="member_trigger" id="sub_btn2">
-          <span>会員限定<br>メニュー</span><i class="fas fa-chevron-down"></i>
-        </button>
-        <ul id="sub_menu2">
-          <li><a href="#"><span>ログイン</span>
-            </a></li>
-          <li><a href="#"><span>新規登録</span>
-            </a></li>
-        </ul>
-      </nav>
-      <aside class="search">
-        <form>
-          <input type="search" autocomplete="off" value name="name" placeholder="商品を検索">
-          <button>
-            <i class="fas fa-search"></i>
+          <ul id="sub_menu2">
+            <li><a href="#"><span>ログイン</span>
+              </a></li>
+            <li><a href="#"><span>新規登録</span>
+              </a></li>
+          </ul>
+        </nav>
+        <aside class="search">
+          <form>
+            <input type="search" autocomplete="off" value name="name" placeholder="商品を検索">
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </aside>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <div class="main_title wrapper">
+          <h1>ショッピングカート</h1>
+        </div>
+        <div class="main_text">
+          <p>ショッピングカートには下記の商品が入っております。</p>
+        </div>
+      </section>
+      <div class="cart_main wrapper">
+        <table class="cart_table" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr class="table_top">
+              <th>商品名</th>
+              <th>単価</th>
+              <th>数量</th>
+              <th>小計</th>
+              <th>削除</th>
+            </tr>
+            <tr>
+              <td>
+                <dl class="cart_table_item">
+                  <dt class="cart_table_item_img">
+                    <img src="img/4e0fd9f33800f722978f8096222d102a_t.jpeg">
+                  </dt>
+                  <dd class="cart_item_title">
+                    <p>[ご当地限定]　北海道産　桃</p>
+                  </dd>
+                </dl>
+              </td>
+              <td class="cart_table_item_price">
+                2,500円
+              </td>
+              <td>
+                <div class="cart_inner">
+                  <!-- <p class="stock"><span>在庫あり</span></p> -->
+                  <div class="cart_btn cart_btn_plus" id="up">＋</div>
+                  <div class="cart_number_input">
+                    <input id="text_box" type="text" name="amount" value="1" size="2" maxlength="2">
+                  </div>
+                  <div class="cart_btn cart_btn_minus" id="down">ー</div>
+                </div>
+              </td>
+              <td class="cart_table_item_price_amount">
+                2,500円
+              </td>
+              <td>
+                <button class="cart_item_delete">×</button>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="5" class="cart_total">
+                <dl class="cart_total_price">
+                  <dt>合計金額</dt>
+                  <dd>
+                    <span class="num">2,500円</span>
+                    <span class="tax">（税込）</span>
+                  </dd>
+                </dl>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn_area">
+          <button type="button" class="cancel_btn_area common_btn">
+            <div class="cancel_btn">買い物を続ける</div>
           </button>
-        </form>
-      </aside>
-    </ul>
-  </header>
-  <main>
-    <section>
-    <div>
-      <h1>カート</h1>
-    </div>
-    </section>
-  </main>
-</body>
+          <button type="button" class="submit_btn_area common_btn">
+            <div class="submit_btn">
+              <span>購入手続きへ進む</span>
+              <i class="fas fa-caret-right btn2"></i>
+            </div>
+          </button>
+        </div>
+
+      </div>
+    </main>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+
 </html>

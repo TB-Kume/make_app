@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品一覧</title>
+    <!-- FontAwasome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+  </head>
+
+  <body>
+    <header id="header" class="site_header">
+      <h1 class="site_logo">
+        <a href="#">ARSフードロス</a>
+      </h1>
+      <ul class="header_contain">
+        <nav class="item">
+          <li>
+            <button class="item_trigger" id="sub_btn">
+              <span>商品一覧</span><i class="fas fa-chevron-down"></i>
+            </button>
+          </li>
+          <ul id="sub_menu">
+            <li><a href="#"><span>全て見る</span>
+              </a></li>
+            <li><a href="#"><span>食品</span>
+              </a></li>
+            <li><a href="#"><span>飲料</span>
+              </a></li>
+            <li><a href="#"><span>日用品</span>
+              </a></li>
+            <li><a href="#"><span>美容・健康</span>
+              </a></li>
+            <li><a href="#"><span>雑貨</span>
+              </a></li>
+            <li><a href="#"><span>その他</span>
+              </a></li>
+          </ul>
+        </nav>
+        <nav class="member">
+          <button class="member_trigger" id="sub_btn2">
+            <span>会員限定<br>メニュー</span><i class="fas fa-chevron-down"></i>
+          </button>
+          <ul id="sub_menu2">
+            <li><a href="#"><span>ログイン</span>
+              </a></li>
+            <li><a href="#"><span>新規登録</span>
+              </a></li>
+          </ul>
+        </nav>
+        <aside class="search">
+          <form>
+            <input type="search" autocomplete="off" value name="name" placeholder="商品を検索">
+            <button>
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </aside>
+      </ul>
+    </header>
+    <main>
+      <section>
+        <div class="main_title wrapper">
+          <ol class="breadcrumb">
+            <li itemprop="itemListElement" itemscope itemtype="ホームのURL">
+              <a itemprop="item" href="ホームのURL">
+                <span itemprop="name">ホーム</span>
+              </a>
+              <meta itemprop="position" content="1" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="カテゴリー1のURL">
+              <a itemprop="item" href="カテゴリー1のURL">
+                <span itemprop="name">カテゴリー1「例:食品」</span>
+              </a>
+              <meta itemprop="position" content="2" />
+            </li>
+
+            <li itemprop="itemListElement" itemscope itemtype="カテゴリー2のURL">
+              <a itemprop="item" href="カテゴリー2のURL">
+                <span itemprop="name">カテゴリー2「例:インスタント系」</span>
+              </a>
+              <meta itemprop="position" content="3" />
+            </li>
+          </ol>
+          <div class="products_title">
+            <h2>商品一覧</h2>
+          </div>
+        </div>
+      </section>
+      <section>
+        <ul class="list_sort wrapper">
+          <li>並び替え：</li>
+          <li id="new_sort" class="sort">新着順</li>
+          <li id="price_sort" class="sort">価格順</li>
+          <li id="sale_sort" class="sort">割引順</li>
+        </ul>
+      </section>
+      <section id="new_item" class="wrapper">
+        <ul>
+          <li>
+            <a href="#"><img src="img/19e79f90d788a31c1f3fca7a11903c3b_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/1eb9486060a41c625707aee3587317a7_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/4e0fd9f33800f722978f8096222d102a_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/65708450a63bc4767851cd68d864852d_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/90cff388d8ee307581ad0b54a6846a82_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/ab87d6df09bbe04459e0793ec05b367c_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/19e79f90d788a31c1f3fca7a11903c3b_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/1eb9486060a41c625707aee3587317a7_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/4e0fd9f33800f722978f8096222d102a_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/19e79f90d788a31c1f3fca7a11903c3b_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/1eb9486060a41c625707aee3587317a7_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/4e0fd9f33800f722978f8096222d102a_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          <li>
+            <a href="#"><img src="img/65708450a63bc4767851cd68d864852d_t.jpeg" alt="テキストサンプル"></a>
+            <h3 class="content_title">サンプルタイトル</h3>
+            <div class="item_text">
+              <p class="price">
+                <s>5,000円</s>
+                <span>2,500円（税込）</span>
+              </p>
+            </div>
+          </li>
+          </ui>
+          <ul class="pagination">
+            <li>前へ</li>
+            <li class="this">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>次へ</li>
+          </ul>
+      </section>
+
+    </main>
+
+    <!--フッター-->
+    <footer id="footer">
+      <ul class="inner wrapper">
+        <li>
+          <p class="title">ご利用方法</p>
+          <ul class="menu">
+            <li>
+              <a href="#">ARSフードロスとは？</a>
+            </li>
+            <li>
+              <a href="#">ご利用ガイド</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">出品者</p>
+          <ul class="menu">
+            <li>
+              <a href="#">出品について</a>
+            </li>
+            <li>
+              <a href="#">出品ガイド</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">購入者</p>
+          <ul class="menu">
+            <li>
+              <a href="#">商品一覧</a>
+            </li>
+            <li>
+              <a href="#">ログイン・新規登録</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">会社概要</p>
+          <ul class="menu">
+            <li>
+              <a href="#">特定商取引法に関する表示</a>
+            </li>
+            <li>
+              <a href="#">プライバシーポリシー</a>
+            </li>
+            <li>
+              <a href="#">よくある質問</a>
+            </li>
+            <li>
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li>
+              <a href="#">返品交換について</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p class="title">公式SNS</p>
+          <ul class="menu">
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook-square"></i>facebook</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p class="copyright">@ 2021 ARSフードロス</p>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,65 @@
+.wrapper {
+	max-width: 960px;
+	margin: 0 auto 30px auto;
+	padding: 0 4%;
+	text-align: center;
+}
+.main_title {
+	display: block;
+	padding-top: 120px;
+}
+
+/* メインタイトル */
+.main_title .products_title {
+	text-align: left;
+	position: relative;
+	padding: 1rem 0.5rem;
+}
+
+.main_title .products_title:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	content: "";
+	border-radius: 3px;
+	background-image: linear-gradient(to left, #009efd 0%, #009efd 100%);
+}
+
+.products_title {
+	margin-top: 80px;
+}
+
+/* ソート */
+.list_sort {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.sort {
+	padding: 8px 16px;
+	margin-right: 8px;
+	border: solid 1px #333;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.sort:hover {
+	background-color: rgb(228, 228, 228);
+}
+
+/* ページネーション */
+.pagination {
+	display: inline !important;
+}
+
+.pagination li {
+	display: inline;
+	padding: 10px 15px;
+	border: 1px #ccc solid;
+	color: #000053;
+	border-radius: 5px / 5px;
+	cursor: pointer;
+}

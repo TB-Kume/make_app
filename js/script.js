@@ -1,32 +1,29 @@
-
-$(window).on('scroll', function () {
-    if (20< $(this).scrollTop()) {
-        $('.site_header').addClass('change_color');
-    } else {
-        $('.site_header').removeClass('change_color');
-    }
+$(window).on("scroll", function () {
+	if (20 < $(this).scrollTop()) {
+		$(".site_header").addClass("change_color");
+	} else {
+		$(".site_header").removeClass("change_color");
+	}
 });
 
-$('#myImage').on('change', function (e) {
-    var reader = new FileReader();
-    reader.onload = function (e) {
-        $("#preview").attr('src', e.target.result).css('width','350px');
-    }
-    reader.readAsDataURL(e.target.files[0]);
+$("#myImage").on("change", function (e) {
+	var reader = new FileReader();
+	reader.onload = function (e) {
+		$("#preview").attr("src", e.target.result).css("width", "350px");
+	};
+	reader.readAsDataURL(e.target.files[0]);
 });
 
-$('#sub_btn').click(function(){
-  if ( $('#sub_menu').css('visibility') == 'hidden' )
-    $('#sub_menu').css('visibility','visible');
-  else
-    $('#sub_menu').css('visibility','hidden');
+$("#sub_btn").click(function () {
+	if ($("#sub_menu").css("visibility") == "hidden")
+		$("#sub_menu").css("visibility", "visible");
+	else $("#sub_menu").css("visibility", "hidden");
 });
 
-$('#sub_btn2').click(function(){
-  if ( $('#sub_menu2').css('visibility') == 'hidden' )
-    $('#sub_menu2').css('visibility','visible');
-  else
-    $('#sub_menu2').css('visibility','hidden');
+$("#sub_btn2").click(function () {
+	if ($("#sub_menu2").css("visibility") == "hidden")
+		$("#sub_menu2").css("visibility", "visible");
+	else $("#sub_menu2").css("visibility", "hidden");
 });
 
 // 画像複数指定  今はつかわない
@@ -56,26 +53,23 @@ $('#sub_btn2').click(function(){
 //   });
 // });
 
+// アロー関数
 (() => {
-  //HTMLのid値を使って以下のDOM要素を取得
-  const downbutton = document.getElementById('down');
-  const upbutton = document.getElementById('up');
-  const text = document.getElementById('textbox');
-  const reset = document.getElementById('reset');
+	//HTMLのid値を使って以下のDOM要素を取得
+	const downButton = document.getElementById("down");
+	const upButton = document.getElementById("up");
+	const text = document.getElementById("text_box");
 
-  //ボタンが押されたらカウント減
-  downbutton.addEventListener('click', (event) => {
-  //1以下にはならないようにする
-  if(text.value >= 2) {
-    text.value--;
-  }
-  });
+	//ボタンが押されたらカウント減
+	downButton.addEventListener("click", (event) => {
+		//1以下にはならないようにする
+		if (text.value >= 2) {
+			text.value--;
+		}
+	});
 
-  //ボタンが押されたらカウント増
-  upbutton.addEventListener('click', (event) => {
-    text.value++;
-  })
-
+	//ボタンが押されたらカウント増
+	upButton.addEventListener("click", (event) => {
+		text.value++;
+	});
 })();
-
-
