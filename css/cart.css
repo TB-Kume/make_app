@@ -121,6 +121,10 @@ table {
 	font-weight: bold;
 }
 
+.cancel_btn:hover {
+	background-color: #b0b6c0;
+}
+
 .submit_btn {
 	display: flex;
 	align-items: center;
@@ -133,13 +137,8 @@ table {
 	font-weight: bold;
 }
 
-.submit_btn span {
-	margin: 0 70px;
-}
-
-.btn2 {
-	color: #fff;
-	font-size: 15px;
+.submit_btn:hover {
+	background-color: #0ca79a;
 }
 
 #footer {
